@@ -3,8 +3,105 @@ header{
   color:#56D958;
   text-align:center;
 }
-.li{width:50%; float:left;}
-.heading{font-size: 20px; padding-bottom: 0px; padding-right: 100px;}
-.contents{margin-left: 25px; margin-top: 2px; margin-bottom: 3px;}
-.newline{margin-top: 18px;  margin-bottom: 5px}
-.rate{margin:10px 0p;  padding-left:10px;  padding-right:15px;  padding-top:15px;  padding-bottom:15px;  width:40%;  border:1px solid #ccc;}
+
+footer{
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+ position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
+/************************************
+** アイコンフキダシボックス(グリーン)
+************************************/
+/* ボックス全体 */
+.iconbox-green{
+  background: #eafaf7 !important; /* 背景色 */
+}
+/* ボックスタイトル */
+.iconbox-green .box-head-green{
+  background: #2fcdb4 !important; /* 背景色 */
+}
+
+.iconbox .iconbox-wrap .newline{margin-top: 18px;  margin-bottom: 5px}
+/************************************
+** アイコンつきリスト
+************************************/
+/* ボックス全体 */
+.iconbox{
+  margin: 0 auto 2em; /* 余白 */
+  background: #fef9ed; /* 背景色 */
+  border-radius:4px; /* 角丸 */
+  max-width:600px; /* 横幅 */
+  padding: 0; /* 余白 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .2); /* 影 */
+  width:50%;
+  float: left;
+  margin-left: 30px;
+}
+/************************************
+** アイコンフキダシボックス(ブルー)
+************************************/
+/* ボックス全体 */
+.iconbox-blue{
+  background: #f2fbff !important; /* 背景色 */
+}
+/* ボックスタイトル */
+.iconbox-blue .box-head-blue{
+  background: #00bfff !important; /* 背景色 */
+}
+/* ボックスタイトル */
+.iconbox .box-title {
+  font-size: 18px; /* 文字サイズ */
+  background: #fdc44f; /* 背景色 */
+  text-align: center; /* 文字配置 */
+  color: #fff; /* 文字色 */
+  font-weight: bold; /* 文字太さ */
+  letter-spacing: 0.05em; /* 文字間隔 */
+  border-radius:4px 4px 0 0; /* 角丸 */
+  line-height:1.5; /* 行間 */
+  padding:1em 2em; /* 余白 */
+}
+/* 段落の余白リセット */
+.iconbox p {
+  margin: 0;/* 文字の余白リセット */
+  padding: 0; /* 文字の内側余白リセット*/
+}
+/* ボックス 中 */
+.iconbox .iconbox-wrap{
+  display:-webkit-box; /* 配置 */
+    display:-ms-flexbox; /* 配置 */
+  display:flex; /* 配置 */
+  padding:1.3em 2em; /* 余白 */
+}
+/* コンテンツ */
+.iconbox .iconbox-wrap .box-content{
+   width: 97%;/*横幅 */
+   margin: 0 3% 0 0 !important;/* 余白 */
+   line-height:1.8;/* 行間 */
+  -ms-flex-item-align: center;/* 中央寄せ */
+   align-self: center;/* 中央寄せ */
+}
+/* コンテンツ段落 */
+.iconbox .iconbox-wrap .box-content p{
+  margin-bottom:3px;/*余白 */
+}
+
+/*スマホ*/
+@media screen and (max-width: 480px){
+/* ボックスタイトル */
+.iconbox .box-title {
+  font-size: 14px; /* 文字サイズ */
+}
+/* ボックス 中 */
+.iconbox .iconbox-wrap {
+    padding: 1em 1em 1em 1.5em;/* 余白 */
+}
+/* コンテンツ */
+.iconbox .iconbox-wrap .box-content{
+  font-size:12px;/*文字サイズ */
+}
