@@ -1,18 +1,37 @@
-header{
+*{box-sizing:border-box;}
+
+header {
   background-color:#436AEA;
   color:#56D958;
   text-align:center;
 }
 
-footer{
-    width: 100%;
-    background-color: #89c7de;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
 
- position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
+span{
+  color: white;
+  font-size: 14px;
+  float: right;
+}
+
+.iconbox .iconbox-wrap .newline{
+  margin-top: 18px;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/************************************
+** アイコンフキダシボックス(ブルー)
+************************************/
+/* ボックス全体 */
+.iconbox-blue{
+  background: #f2fbff !important; /* 背景色 */
+}
+/* ボックスタイトル */
+.iconbox-blue .box-head-blue{
+  background: #00bfff !important; /* 背景色 */
 }
 
 /************************************
@@ -27,7 +46,7 @@ footer{
   background: #2fcdb4 !important; /* 背景色 */
 }
 
-.iconbox .iconbox-wrap .newline{margin-top: 18px;  margin-bottom: 5px}
+
 /************************************
 ** アイコンつきリスト
 ************************************/
@@ -39,20 +58,9 @@ footer{
   max-width:600px; /* 横幅 */
   padding: 0; /* 余白 */
   box-shadow: 0 1px 3px rgba(0, 0, 0, .2); /* 影 */
-  width:50%;
-  float: left;
-  margin-left: 30px;
-}
-/************************************
-** アイコンフキダシボックス(ブルー)
-************************************/
-/* ボックス全体 */
-.iconbox-blue{
-  background: #f2fbff !important; /* 背景色 */
-}
-/* ボックスタイトル */
-.iconbox-blue .box-head-blue{
-  background: #00bfff !important; /* 背景色 */
+  margin: auto;
+  flex:auto;
+  width: 50%;
 }
 /* ボックスタイトル */
 .iconbox .box-title {
@@ -71,10 +79,11 @@ footer{
   margin: 0;/* 文字の余白リセット */
   padding: 0; /* 文字の内側余白リセット*/
 }
+
 /* ボックス 中 */
 .iconbox .iconbox-wrap{
   display:-webkit-box; /* 配置 */
-    display:-ms-flexbox; /* 配置 */
+  display:-ms-flexbox; /* 配置 */
   display:flex; /* 配置 */
   padding:1.3em 2em; /* 余白 */
 }
@@ -90,9 +99,13 @@ footer{
 .iconbox .iconbox-wrap .box-content p{
   margin-bottom:3px;/*余白 */
 }
-
-/*スマホ*/
-@media screen and (max-width: 480px){
+}
+/*タブレット*/
+@media(max-width: 2230px){
+/*ボックス全体*/
+.iconbox{
+  width: 50%;
+}
 /* ボックスタイトル */
 .iconbox .box-title {
   font-size: 14px; /* 文字サイズ */
@@ -104,4 +117,5 @@ footer{
 /* コンテンツ */
 .iconbox .iconbox-wrap .box-content{
   font-size:12px;/*文字サイズ */
+}
 }
