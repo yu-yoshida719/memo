@@ -85,7 +85,7 @@ span{
   display:-webkit-box; /* 配置 */
   display:-ms-flexbox; /* 配置 */
   display:flex; /* 配置 */
-  padding:1.3em 2em; /* 余白 */
+  padding:1.3em 28px; /* 余白 */
 }
 /* コンテンツ */
 .iconbox .iconbox-wrap .box-content{
