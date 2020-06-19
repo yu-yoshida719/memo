@@ -1,3 +1,7 @@
+html {
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
 *{box-sizing:border-box;}
 
 header {
@@ -52,7 +56,6 @@ span{
 ************************************/
 /* ボックス全体 */
 .iconbox{
-  margin: 0 auto 2em; /* 余白 */
   background: #fef9ed; /* 背景色 */
   border-radius:4px; /* 角丸 */
   max-width:600px; /* 横幅 */
@@ -61,6 +64,7 @@ span{
   margin: auto;
   flex:auto;
   width: 50%;
+  margin-bottom: 30px;
 }
 /* ボックスタイトル */
 .iconbox .box-title {
@@ -90,7 +94,7 @@ span{
 /* コンテンツ */
 .iconbox .iconbox-wrap .box-content{
    width: 97%;/*横幅 */
-   margin: 0 3% 0 0 !important;/* 余白 */
+   margin: 0 0 0 0 !important;/* 余白 */
    line-height:1.8;/* 行間 */
   -ms-flex-item-align: center;/* 中央寄せ */
    align-self: center;/* 中央寄せ */
